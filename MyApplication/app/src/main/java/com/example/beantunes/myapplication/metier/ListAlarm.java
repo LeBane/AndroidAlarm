@@ -16,14 +16,14 @@ public class ListAlarm {
 
 
 
-    List<Alarm> l = new ArrayList<>();
+    private List<Alarm> l = new ArrayList<>();
 
     public ListAlarm (){
-        l.add(new Alarm(new Date(2017,03,01,14,10),"alarmo",5));
-        l.add(new Alarm(new Date(2017,03,01,14,10),"alarmi",5));
-        l.add(new Alarm(new Date(2017,03,01,14,10),"alarma",5));
-        l.add(new Alarm(new Date(2017,03,01,14,10),"alarmu",5));
-        l.add(new Alarm(new Date(2017,03,01,14,10),"alarmy",5));
+        l.add(new Alarm(new Date(2017,03,01,14,10),new Date(2017,03,01,14,10),"alarmo",5));
+        l.add(new Alarm(new Date(2017,03,01,14,10),new Date(2017,03,01,14,10),"alarmi",5));
+        l.add(new Alarm(new Date(2017,03,01,14,10),new Date(2017,03,01,14,10),"alarma",5));
+        l.add(new Alarm(new Date(2017,03,01,14,10),new Date(2017,03,01,14,10),"alarmu",5));
+        l.add(new Alarm(new Date(2017,03,01,14,10),new Date(2017,03,01,14,10),"alarmy",5));
     }
 
     public List<Alarm> getList(){
