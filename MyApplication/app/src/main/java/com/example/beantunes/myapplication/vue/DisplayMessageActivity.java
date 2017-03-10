@@ -1,22 +1,14 @@
 package com.example.beantunes.myapplication.vue;
 
-import android.content.Context;
 import android.content.Intent;
-import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
-import android.hardware.SensorManager;
 import android.provider.AlarmClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.TextView;
 
 import com.example.beantunes.myapplication.R;
 
-public class DisplayMessageActivity extends AppCompatActivity{
-
-
+public class DisplayMessageActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +21,7 @@ public class DisplayMessageActivity extends AppCompatActivity{
         textView.setTextSize(40);
         textView.setText(message);
 
-
-
     }
-
 /*
         ViewGroup layout = (ViewGroup) findViewById(R.id.activity_display_message);
         layout.addView(textView);

@@ -7,27 +7,22 @@ import java.util.Date;
  */
 public class Alarm {
 
-    private Date dateStart;
-
-    private Date dateEnd;
+    private Date date;
 
     private String nom;
 
     private int nbRep;
 
-    public Alarm (Date dateStart, Date dateEnd, String nom, int nbrep){
+    public Alarm (Date date, String nom, int nbrep){
 
-        this.dateStart = dateStart;
-        this.dateEnd = dateEnd;
+        this.date = date;
         this.nom = nom;
         this.nbRep = nbrep;
     }
 
-    public Date getDateStart (){
-        return dateStart;
+    public Date getDate (){
+        return date;
     }
-
-    public Date getDateEnd () { return dateEnd; }
 
     public String getNom(){
         return nom;
@@ -35,15 +30,5 @@ public class Alarm {
 
     public int getNbRep(){
         return nbRep;
-    }
-
-    @Override
-    public String toString() {
-        return "Alarm{" +
-                //"dateStart=" + dateStart +
-                //", dateEnd=" + dateEnd +
-                ", nom='" + nom + '\'' +
-                ", nbRep=" + nbRep +
-                '}';
     }
 }
