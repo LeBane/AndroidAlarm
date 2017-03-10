@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * Created by beantunes on 01/03/17.
  */
-public class Alarm {
+public class Alarm  {
 
     private Date date;
 
