@@ -1,11 +1,14 @@
 package com.example.beantunes.myapplication.vue;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.icu.util.Calendar;
 import android.provider.AlarmClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,6 +18,9 @@ import android.widget.TextView;
 import com.example.beantunes.myapplication.R;
 
 public class DisplayMessageActivity extends AppCompatActivity{
+
+    private AlarmManager alarmMgr;
+    private PendingIntent alarmIntent;
 
 
 
@@ -32,8 +38,22 @@ public class DisplayMessageActivity extends AppCompatActivity{
 
 
     }
+    AlarmClock alr = new AlarmClock();
+    AlarmManager alarms = (AlarmManager)getSystemService(Context.ALARM_SERVICE);
 
-/*
+    @Override
+    public void startActivity(Intent intent) {
+        super.startActivity(intent);
+    }
+
+
+
+    public PendingIntent getAlarmIntent() {
+        return alarmIntent;
+    }
+
+
+    /*
         ViewGroup layout = (ViewGroup) findViewById(R.id.activity_display_message);
         layout.addView(textView);
 
@@ -45,6 +65,7 @@ public class DisplayMessageActivity extends AppCompatActivity{
 
         b.set(AlarmManager.RTC,1000,null);
 */
+    /*
         public void createAlarm(String message, int hour, int minutes) {
             Intent intent2 = new Intent(AlarmClock.ACTION_SET_ALARM)
                     .putExtra(AlarmClock.EXTRA_MESSAGE, message)
@@ -54,7 +75,8 @@ public class DisplayMessageActivity extends AppCompatActivity{
                 startActivity(intent2);
             }
         }
-
+*/
 
 
 }
+
