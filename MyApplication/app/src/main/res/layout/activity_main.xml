@@ -15,6 +15,7 @@
         android:layout_toLeftOf="@+id/button"
         android:layout_toStartOf="@+id/button" />
 
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/my_recycler_view"
         android:layout_width="match_parent"

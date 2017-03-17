@@ -29,28 +29,15 @@ public class DisplayMessageActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_message);
 
-        Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-        TextView textView = new TextView(this);
-        textView.setTextSize(40);
-        textView.setText(message);
+      //  alarmMgr = (AlarmManager) getSystemService(ALARM_SERVICE);
 
 
 
     }
-    AlarmClock alr = new AlarmClock();
-    AlarmManager alarms = (AlarmManager)getSystemService(Context.ALARM_SERVICE);
-
-    @Override
-    public void startActivity(Intent intent) {
-        super.startActivity(intent);
-    }
 
 
+  //  Intent openNewAlarm = new Intent(AlarmClock.ACTION_SET_ALARM);
 
-    public PendingIntent getAlarmIntent() {
-        return alarmIntent;
-    }
 
 
     /*
