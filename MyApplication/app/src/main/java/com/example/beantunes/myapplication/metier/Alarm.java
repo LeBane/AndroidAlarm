@@ -1,5 +1,7 @@
 package com.example.beantunes.myapplication.metier;
 
+import android.text.format.DateUtils;
+
 import java.util.Date;
 
 /**
@@ -39,11 +41,10 @@ public class Alarm  {
 
     @Override
     public String toString() {
-        return "Alarm{" +
-                //"dateStart=" + dateStart +
-                //", dateEnd=" + dateEnd +
-                ", nom='" + nom + '\'' +
-                ", nbRep=" + nbRep +
-                '}';
+        return
+                nom + " : " +
+                " " + dateStart.getHours() +"h" +dateStart.getMinutes() +
+                " - > " +
+                " " + dateEnd.getHours() +"h" +dateEnd.getMinutes();
     }
 }

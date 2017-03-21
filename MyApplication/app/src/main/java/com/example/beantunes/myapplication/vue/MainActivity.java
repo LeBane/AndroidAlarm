@@ -75,8 +75,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
         if(sensorEvent.sensor.getType() == Sensor.TYPE_ROTATION_VECTOR)
-            Log.d("sensor",Float.toString(sensorEvent.values[2]));
-            if(telPoseSurDos) {
+            Log.d("000000000sensor",Float.toString(sensorEvent.values[0]));
+        Log.d("1111111111111sensor",Float.toString(sensorEvent.values[1]));
+        Log.d("2222222222222sensor",Float.toString(sensorEvent.values[2]));
+            if(telPoseSurDos) { 
                 if (Math.abs(sensorEvent.values[2]) < 0.3)
                     tvtest.setText("DESACTIVE ALARME");
                 else
