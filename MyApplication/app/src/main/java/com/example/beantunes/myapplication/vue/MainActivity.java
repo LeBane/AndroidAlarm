@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         calendar.set(Calendar.MINUTE, 58);
         Toast.makeText(MainActivity.this, "bjr", Toast.LENGTH_SHORT).show();
         // alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, time + 5, 10000, pendingIntent);
-        alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
+        alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(),  pendingIntent);
         // Bon manque de prevenir le receiver....!!
 
     }
